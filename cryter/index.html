@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cryter</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            @media (max-width: 400px) {
+                nav {
+                    width: 375px;
+                    padding: 40px 32px 24px 32px;
+                    border: none;
+                }
+
+                body .none {
+                    display: none;
+                }
+
+                .logo {
+                    width: 126px;
+                }
+
+                header .slogan {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body class="bg-[#141416] max-w-[1440px] mx-auto">
+        <nav class="h-[80px] w-[100%] px-[160px] py-[20px] flex justify-between border-b-[1px] border-[#353945]">
+            <div class="flex gap-[32px] items-center">
+                <a class="logo" href="#">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+                <img class="none h-[40px]" src="images/line.png">
+                <a class="none text-[14px] text-[#777E90] flex" href="#">Discover</a>
+                <a class="none text-[14px] text-[#777E90] flex" href="#">How it work</a>
+            </div>
+
+            <div class="none flex gap-[24px]">
+                <!-- Thanh tim kiem -->
+                <div class="relative">
+                    <input 
+                        class=
+                        "w-[256px] h-[40px] py-[10px] pl-[16px] pr-[12px] 
+                        text-[12px] bg-[#141416] 
+                        border-[2px] rounded-[8px] border-[#353945] 
+                        text-[#777E90] placeholder-[#777E90]" 
+                        type="text" 
+                        placeholder="Search">
+                    <img class="absolute top-[10px] right-[12px]" src="images/ic-search.svg">
+                </div>
+
+                <!-- Chuong thong bao -->
+                <div class="flex w-[40px] h-[40px] relative justify-center items-center">
+                    <a href="#"><img class="w-[24px] h-[24px]" src="images/ic-bell.svg"></a>
+                    <div class="w-[12px] h-[12px] absolute top-0 right-0 rounded-[50%] bg-[#45B26B]"></div>
+                </div>
+
+                <!-- Upload and Connect wallet -->
+                <div class="flex gap-[12px]">
+                    <button class="flex px-[16px] py-[12px] rounded-[90px] items-center bg-[#3772FF] text-[#FCFCFD]">Upload</button>
+                    <button class="flex px-[16px] py-[12px] rounded-[90px] border-[2px] items-center border-[#777E90] text-[#FCFCFD]">Connect Wallet</button>
+                </div>
+            </div>
+        </nav>
+
+        <header class="w-[100%] h-[268px] px-[352px] flex justify-center items-end">
+            <div class="flex flex-col gap-[24px] items-center">
+                <div class="flex flex-col items-center gap-[8px]">
+                    <p class="none text-[12px] font-bold text-[#777E90]">Create, explore, & collect digital art NFTs.</p>
+                    <p class="slogan text-[12px] font-bold text-[#777E90] hidden">stacks 1.0</p>
+                    <h1 class="text-[40px] font-bold text-[#FCFCFD]">The new creative economy.</h1>
+                </div>
+                <button class="w-[182px] h-[48px] px-[24px] py-[16px] 
+                    flex justify-center items-center 
+                    border-[2px] rounded-[90px] border-[#777E90] 
+                    font-bold text-[16px] text-[#FCFCFD]">
+                        Start your search
+                </button>
+            </div>
+        </header>
+
+        <main class="w-[100%] px-[160px] py-[128px] flex flex-col gap-[80px]">
+            <h1 class="text-[40px] font-bold text-[#FCFCFD] tracking-[-0.4px]">Discover</h1>
+            
+            <div class="flex flex-col gap-[32px] items-center">
+                <!-- Filter -->
+                <div class="flex flex-col gap-8">
+                    <div class="flex justify-between items-center">
+                        <!-- Recently -->
+                        <div class="w-[180px] h-[48px] pl-[16px] p-[8px] border-[2px] border-[#353945] rounded-[12px] flex justify-between items-center">
+                            <button class="text-[14px] font-medium text-[#FCFCFD]">Recently added</button>
+                            <div class="w-[32px] h-[32px] border-[2px] border-[#353945] rounded-full flex justify-center items-center">
+                                <img class="" src="images/ic-down.svg">
+                            </div>
+                        </div>
+                        <!-- Sub Nav -->
+                        <ul class="flex gap-[12px]">
+                            <li class="px-[12px] py-[6px] text-[14px] font-bold text-[#777E90] rounded-[100px] hover:bg-[#353945] hover:text-[#FCFCFD]">All items</li>
+                            <li class="px-[12px] py-[6px] text-[14px] font-bold text-[#777E90] rounded-[100px] hover:bg-[#353945] hover:text-[#FCFCFD]">Art</li>
+                            <li class="px-[12px] py-[6px] text-[14px] font-bold text-[#777E90] rounded-[100px] hover:bg-[#353945] hover:text-[#FCFCFD]">Game</li>
+                            <li class="px-[12px] py-[6px] text-[14px] font-bold text-[#777E90] rounded-[100px] hover:bg-[#353945] hover:text-[#FCFCFD]">Photography</li>
+                            <li class="px-[12px] py-[6px] text-[14px] font-bold text-[#777E90] rounded-[100px] hover:bg-[#353945] hover:text-[#FCFCFD]">Music</li>
+                            <li class="px-[12px] py-[6px] text-[14px] font-bold text-[#777E90] rounded-[100px] hover:bg-[#353945] hover:text-[#FCFCFD]">Video</li>
+                        </ul>
+                        <!-- Delete Filter -->
+                        <div class="w-[116px] h-[48px] px-[24px] py-16px bg-[#3772FF] rounded-[90px] flex items-center justify-between cursor-pointer">
+                            <button class="text-[16px] font-bold text-[#FCFCFD]">Filter</button>
+                            <img class="w-[16px] h-[16px]" src="images/ic-close.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="w-[100%] h-[1px] bg-[#353945]"></div> <!-- line -->
+
+                    <div class="flex gap-[32px]">
+                        <div class="w-[256px] h-[72px] flex flex-col gap-[12px]">
+                            <p class="text-[12px] font-bold uppercase text-[#B1B5C3]">Price</p>
+                            <div class="pl-[16px] p-[8px] flex justify-between items-center border-[2px] border-[#353945] rounded-[12px]">
+                                <p class="text-[14px] font-medium text-[#FCFCFD]">Highest price</p>
+                                <div class="w-[32px] h-[32px] border-[2px] border-[#353945] rounded-full flex justify-center items-center">
+                                    <img class="" src="images/ic-down.svg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-[256px] h-[72px] flex flex-col gap-[12px]">
+                            <p class="text-[12px] font-bold uppercase text-[#B1B5C3]">likes</p>
+                            <div class="pl-[16px] p-[8px] flex justify-between items-center border-[2px] border-[#353945] rounded-[12px]">
+                                <p class="text-[14px] font-medium text-[#FCFCFD]">Most liked</p>
+                                <div class="w-[32px] h-[32px] border-[2px] border-[#353945] rounded-full flex justify-center items-center">
+                                    <img class="" src="images/ic-down.svg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-[256px] h-[72px] flex flex-col gap-[12px]">
+                            <p class="text-[12px] font-bold uppercase text-[#B1B5C3]">Creator</p>
+                            <div class="pl-[16px] p-[8px] flex justify-between items-center border-[2px] border-[#353945] rounded-[12px]">
+                                <p class="text-[14px] font-medium text-[#FCFCFD]">Verified only</p>
+                                <div class="w-[32px] h-[32px] border-[2px] border-[#353945] rounded-full flex justify-center items-center">
+                                    <img class="" src="images/ic-down.svg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-[256px] h-[72px] flex flex-col gap-[12px]">
+                            <p class="text-[12px] font-bold uppercase text-[#B1B5C3]">Price range</p>
+                            <input class="accent-[#3772FF]" type="range">
+                            <div class="flex justify-between">
+                                <p class="text-[14px] font-medium text-[#FCFCFD]">0.01 ETH</p>
+                                <p class="text-[14px] font-medium text-[#FCFCFD]">10 ETH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- row1 -->
+                <div class="flex gap-[32px]">
+                    <!-- item 1 -->
+                    <div>
+                        <img class="rounded-[12px]" src="images/img1.png">
+                        <div class="w-[256px] py-[20px] flex flex-col gap-[12px]">
+                            <div class="flex items-center justify-between">
+                                <h2 class="text-[16px] font-medium text-[#FCFCFD]">Amazing digital art</h2>
+                                <p class="w-[68px] h-[26px] flex items-center justify-center uppercase text-[12px] font-bold text-[#45B26B] rounded-[4px] border-[2px] border-[#45B26B]">2.45 eth</p>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <div class="flex relative">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#9757D7]" src="images/avt3.png" alt="">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#EF466F] absolute left-[16px]" src="images/avt3.png" alt="">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#45B26B] absolute left-[32px]" src="images/avt3.png" alt="">
+                                </div>
+
+                                <p class="text-[14px] font-medium text-[#E6E8EC]">3 in stock</p>
+                            </div>
+
+                            <div class="w-[100%] h-[1px] bg-[#353945]"></div> <!-- line -->
+
+                            <div class="flex justify-between">
+                                <div class="flex gap-[4px]"> 
+                                    <img src="images/ic-candlesticks.svg">
+                                    <p class="text-[12px] text-[#777E90]">Highest bid</p>
+                                    <p class="text-[12px] font-semibold text-[#FCFCFD]">0.001 ETH</p>
+                                </div>
+
+                                <p class="text-[12px] text-[#777E90]">New bid 🔥</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- item 2 -->
+                    <div>
+                        <img class="rounded-[12px]" src="images/img2.png">
+                        <div class="w-[256px] py-[20px] flex flex-col gap-[12px]">
+                            <div class="flex items-center justify-between">
+                                <h2 class="text-[16px] font-medium text-[#FCFCFD]">Amazing digital art</h2>
+                                <p class="w-[68px] h-[26px] flex items-center justify-center uppercase text-[12px] font-bold text-[#45B26B] rounded-[4px] border-[2px] border-[#45B26B]">2.45 eth</p>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <div class="flex relative">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#9757D7]" src="images/avt3.png" alt="">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#EF466F] absolute left-[16px]" src="images/avt3.png" alt="">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#45B26B] absolute left-[32px]" src="images/avt3.png" alt="">
+                                </div>
+
+                                <p class="text-[14px] font-medium text-[#E6E8EC]">3 in stock</p>
+                            </div>
+
+                            <div class="w-[100%] h-[1px] bg-[#353945]"></div> <!-- line -->
+
+                            <div class="flex justify-between">
+                                <div class="flex gap-[4px]"> 
+                                    <img src="images/ic-candlesticks.svg">
+                                    <p class="text-[12px] text-[#777E90]">Highest bid</p>
+                                    <p class="text-[12px] font-semibold text-[#FCFCFD]">0.001 ETH</p>
+                                </div>
+
+                                <p class="text-[12px] text-[#777E90]">New bid 🔥</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- item 3 -->
+                    <div>
+                        <img class="rounded-[12px]" src="images/img3.png">
+                        <div class="w-[256px] py-[20px] flex flex-col gap-[12px]">
+                            <div class="flex items-center justify-between">
+                                <h2 class="text-[16px] font-medium text-[#FCFCFD]">Amazing digital art</h2>
+                                <p class="w-[68px] h-[26px] flex items-center justify-center uppercase text-[12px] font-bold text-[#45B26B] rounded-[4px] border-[2px] border-[#45B26B]">2.45 eth</p>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <div class="flex relative">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#9757D7]" src="images/avt3.png" alt="">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#EF466F] absolute left-[16px]" src="images/avt3.png" alt="">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#45B26B] absolute left-[32px]" src="images/avt3.png" alt="">
+                                </div>
+
+                                <p class="text-[14px] font-medium text-[#E6E8EC]">3 in stock</p>
+                            </div>
+
+                            <div class="w-[100%] h-[1px] bg-[#353945]"></div> <!-- line -->
+
+                            <div class="flex justify-between">
+                                <div class="flex gap-[4px]"> 
+                                    <img src="images/ic-candlesticks.svg">
+                                    <p class="text-[12px] text-[#777E90]">Highest bid</p>
+                                    <p class="text-[12px] font-semibold text-[#FCFCFD]">0.001 ETH</p>
+                                </div>
+
+                                <p class="text-[12px] text-[#777E90]">New bid 🔥</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- item 4 -->
+                    <div>
+                        <img class="rounded-[12px]" src="images/img4.png">
+                        <div class="w-[256px] py-[20px] flex flex-col gap-[12px]">
+                            <div class="flex items-center justify-between">
+                                <h2 class="text-[16px] font-medium text-[#FCFCFD]">Ribbon Hunter</h2>
+                                <p class="w-[68px] h-[26px] flex items-center justify-center uppercase text-[12px] font-bold text-[#45B26B] rounded-[4px] border-[2px] border-[#45B26B]">2.45 eth</p>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <div class="flex relative">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#9757D7]" src="images/avt3.png" alt="">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#EF466F] absolute left-[16px]" src="images/avt3.png" alt="">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#45B26B] absolute left-[32px]" src="images/avt3.png" alt="">
+                                </div>
+
+                                <p class="text-[14px] font-medium text-[#E6E8EC]">3 in stock</p>
+                            </div>
+
+                            <div class="w-[100%] h-[1px] bg-[#353945]"></div> <!-- line -->
+
+                            <div class="flex justify-between">
+                                <div class="flex gap-[4px]"> 
+                                    <img src="images/ic-candlesticks.svg">
+                                    <p class="text-[12px] text-[#777E90]">Highest bid</p>
+                                    <p class="text-[12px] font-semibold text-[#FCFCFD]">0.001 ETH</p>
+                                </div>
+
+                                <p class="text-[12px] text-[#777E90]">New bid 🔥</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- row2 -->
+                <div class="flex gap-[32px]">
+                    <!-- item 1 -->
+                    <div>
+                        <img class="rounded-[12px]" src="images/img5.png">
+                        <div class="w-[256px] py-[20px] flex flex-col gap-[12px]">
+                            <div class="flex items-center justify-between">
+                                <h2 class="text-[16px] font-medium text-[#FCFCFD]">Amazing digital art</h2>
+                                <p class="w-[68px] h-[26px] flex items-center justify-center uppercase text-[12px] font-bold text-[#45B26B] rounded-[4px] border-[2px] border-[#45B26B]">2.45 eth</p>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <div class="flex relative">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#9757D7]" src="images/avt3.png" alt="">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#EF466F] absolute left-[16px]" src="images/avt3.png" alt="">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#45B26B] absolute left-[32px]" src="images/avt3.png" alt="">
+                                </div>
+
+                                <p class="text-[14px] font-medium text-[#E6E8EC]">3 in stock</p>
+                            </div>
+
+                            <div class="w-[100%] h-[1px] bg-[#353945]"></div> <!-- line -->
+
+                            <div class="flex justify-between">
+                                <div class="flex gap-[4px]"> 
+                                    <img src="images/ic-candlesticks.svg">
+                                    <p class="text-[12px] text-[#777E90]">Highest bid</p>
+                                    <p class="text-[12px] font-semibold text-[#FCFCFD]">0.001 ETH</p>
+                                </div>
+
+                                <p class="text-[12px] text-[#777E90]">New bid 🔥</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- item 2 -->
+                    <div>
+                        <img class="rounded-[12px]" src="images/img2.png">
+                        <div class="w-[256px] py-[20px] flex flex-col gap-[12px]">
+                            <div class="flex items-center justify-between">
+                                <h2 class="text-[16px] font-medium text-[#FCFCFD]">Amazing digital art</h2>
+                                <p class="w-[68px] h-[26px] flex items-center justify-center uppercase text-[12px] font-bold text-[#45B26B] rounded-[4px] border-[2px] border-[#45B26B]">2.45 eth</p>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <div class="flex relative">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#9757D7]" src="images/avt3.png" alt="">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#EF466F] absolute left-[16px]" src="images/avt3.png" alt="">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#45B26B] absolute left-[32px]" src="images/avt3.png" alt="">
+                                </div>
+
+                                <p class="text-[14px] font-medium text-[#E6E8EC]">3 in stock</p>
+                            </div>
+
+                            <div class="w-[100%] h-[1px] bg-[#353945]"></div> <!-- line -->
+
+                            <div class="flex justify-between">
+                                <div class="flex gap-[4px]"> 
+                                    <img src="images/ic-candlesticks.svg">
+                                    <p class="text-[12px] text-[#777E90]">Highest bid</p>
+                                    <p class="text-[12px] font-semibold text-[#FCFCFD]">0.001 ETH</p>
+                                </div>
+
+                                <p class="text-[12px] text-[#777E90]">New bid 🔥</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- item 3 -->
+                    <div>
+                        <img class="rounded-[12px]" src="images/img3.png">
+                        <div class="w-[256px] py-[20px] flex flex-col gap-[12px]">
+                            <div class="flex items-center justify-between">
+                                <h2 class="text-[16px] font-medium text-[#FCFCFD]">Amazing digital art</h2>
+                                <p class="w-[68px] h-[26px] flex items-center justify-center uppercase text-[12px] font-bold text-[#45B26B] rounded-[4px] border-[2px] border-[#45B26B]">2.45 eth</p>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <div class="flex relative">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#9757D7]" src="images/avt3.png" alt="">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#EF466F] absolute left-[16px]" src="images/avt3.png" alt="">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#45B26B] absolute left-[32px]" src="images/avt3.png" alt="">
+                                </div>
+
+                                <p class="text-[14px] font-medium text-[#E6E8EC]">3 in stock</p>
+                            </div>
+
+                            <div class="w-[100%] h-[1px] bg-[#353945]"></div> <!-- line -->
+
+                            <div class="flex justify-between">
+                                <div class="flex gap-[4px]"> 
+                                    <img src="images/ic-candlesticks.svg">
+                                    <p class="text-[12px] text-[#777E90]">Highest bid</p>
+                                    <p class="text-[12px] font-semibold text-[#FCFCFD]">0.001 ETH</p>
+                                </div>
+
+                                <p class="text-[12px] text-[#777E90]">New bid 🔥</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- item 4 -->
+                    <div>
+                        <img class="rounded-[12px]" src="images/img4.png">
+                        <div class="w-[256px] py-[20px] flex flex-col gap-[12px]">
+                            <div class="flex items-center justify-between">
+                                <h2 class="text-[16px] font-medium text-[#FCFCFD]">Amazing digital art</h2>
+                                <p class="w-[68px] h-[26px] flex items-center justify-center uppercase text-[12px] font-bold text-[#45B26B] rounded-[4px] border-[2px] border-[#45B26B]">2.45 eth</p>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <div class="flex relative">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#9757D7]" src="images/avt3.png" alt="">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#EF466F] absolute left-[16px]" src="images/avt3.png" alt="">
+                                    <img class="h-[24px] w-[24px] flex items-center border-[2px] border-[#23262F] rounded-full bg-[#45B26B] absolute left-[32px]" src="images/avt3.png" alt="">
+                                </div>
+
+                                <p class="text-[14px] font-medium text-[#E6E8EC]">3 in stock</p>
+                            </div>
+
+                            <div class="w-[100%] h-[1px] bg-[#353945]"></div> <!-- line -->
+
+                            <div class="flex justify-between">
+                                <div class="flex gap-[4px]"> 
+                                    <img src="images/ic-candlesticks.svg">
+                                    <p class="text-[12px] text-[#777E90]">Highest bid</p>
+                                    <p class="text-[12px] font-semibold text-[#FCFCFD]">0.001 ETH</p>
+                                </div>
+
+                                <p class="text-[12px] text-[#777E90]">New bid 🔥</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="w-[135px] h-[40px] px-[16px] py-[12px] flex gap-[12px] justify-between items-center border-[2px] border-[#777E90] rounded-[90px]">
+                    <p class="text-[14px] font-bold text-[#FCFCFD]">Load more</p>
+                    <img src="images/ic-loading.svg">
+                </button>
+            </div>
+        </main>
+
+        <footer class="px-[160px] pt-[80px] border-t-[2px] border-[#353945]">
+            <div class="flex flex-col gap-[48px]">
+                <div class="flex gap-[32px]">
+                    <div class="w-[352px] h-[128px] flex flex-col gap-[32px]">
+                        <img class="w-[86px] h-[32px]" src="images/logo.png">
+                        <p class="w-[256px] text-[24px] text-[#E6E8EC] tracking-[-0.24px]">The New Creative Economy.</p>
+                    </div>
+
+                    <div class="w-[160px] h-[160px] flex flex-col gap-[40px]">
+                        <h2 class="text-[16px] text-[#FCFCFD] font-medium">Stacks</h2>
+                        <div class="flex flex-col gap-[24px]"> 
+                            <p class="text-[14px] text-[#777E90] font-bold">Discover</p>
+                            <p class="text-[14px] text-[#777E90] font-bold">Connect wallet</p>
+                            <p class="text-[14px] text-[#777E90] font-bold">Create item</p>
+                        </div>
+                    </div>
+
+                    <div class="w-[160px] h-[160px] flex flex-col gap-[40px]">
+                        <h2 class="text-[16px] text-[#FCFCFD] font-medium">Info</h2>
+                        <div class="flex flex-col gap-[24px]"> 
+                            <p class="text-[14px] text-[#777E90] font-bold">Download</p>
+                            <p class="text-[14px] text-[#777E90] font-bold">Demos</p>
+                            <p class="text-[14px] text-[#777E90] font-bold">Support</p>
+                        </div>
+                    </div>
+
+                    <div class="w-[352px] h-[182px] flex flex-col gap-[40px]">
+                        <h2 class="text-[16px] text-[#FCFCFD] font-medium">Join Newsletter</h2>
+                        <div class="flex flex-col gap-[24px]">
+                            <p class="text-[14px] text-[#E6E8EC]">Subscribe our newsletter to get more free design course and resource</p>
+                            <div class="relative">
+                                <input class="w-full pl-[16px] p-[8px]
+                                    text-[14px] placeholder:text-[#777E90]
+                                    border-[#777E90] border-[2px] rounded-[90px] bg-[#141416]"
+                                    type="email" placeholder="Enter your email">
+                                <div class="absolute top-[4px] right-[8px] w-[32px] h-[32px] p-[4px] bg-[#3772FF] rounded-full" >
+                                    <img src="images/ic-right.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col gap-[32px] pb-[32px]">
+                    <div class="w-[100%] h-[1px] bg-[#353945]"></div> <!-- line -->
+                    <div class="flex justify-between">
+                        <p class="text-[12px] text-[#777E90]">Copyright © 2021 UI8 LLC. All rights reserved</p>
+                        <div class="flex gap-[16px]">
+                            <p class="text-[12px] text-[#E6E8EC]">We use cookies for better service.</p>
+                            <a class="text-[12px] font-semibold text-[#3772FF]" href="#">Accept</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
